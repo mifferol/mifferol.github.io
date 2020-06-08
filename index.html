@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="http://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css\style.css" />
+    <link rel="stylesheet" href="css\normalize.css" />
+    <link rel="stylesheet" href="css\animate.css" />
+    <title>Language Centre</title>
+  </head>
+  <body>
+    <section class="banner">
+      <header class="header">
+        <img src="img\lightbulb-logo.svg" alt="logo" class="logo" />
+        <nav class="nav">
+          <div class="nav-links">
+            <a href="#offers" class="lang nav-link" key="offer">послуги</a>
+            <a href="#about" class="lang nav-link" key="about">про нас</a>
+            <a href="#benefits" class="lang nav-link" key="advantages"
+              >переваги</a
+            >
+            <a href="#translation" class="lang nav-link" key="trans"
+              >переклади</a
+            >
+            <a href="#corporate" class="lang nav-link" key="corporate"
+              >корпоративні заняття</a
+            >
+            <a href="#test" class="lang nav-link" key="student"
+              >записатися на заняття</a
+            >
+            <a href="#contacts" class="lang nav-link" key="contacts"
+              >контакти</a
+            >
+          </div>
+        </nav>
+        <div class="lang-buttons">
+          <button class="translate button button-ua" id="ua">UA</button>
+          <button class="translate button button-en" id="en">EN</button>
+        </div>
+      </header>
+      <div class="banner-text-block">
+        <h1 class="banner-tittle">Language Centre</h1>
+        <p class="lang banner-subtittle" key="courseDescr">
+          Мовні курси , що спеціалізуються на викладанні англійської мови для
+          всіх рівнів і вікових категорій.
+        </p>
+      </div>
+      <!-- /.banner-text-block -->
+      <a href="#contacts"
+        ><div
+          class="lang button green-button wow fadeInUp"
+          data-wow-delay="0.2s"
+          key="contactBtn"
+        >
+          зв'язатися з нами
+        </div></a
+      >
+    </section>
+    <!-- /.banner -->
+    <a name="offers"></a>
+    <section class="offers">
+      <div class="container">
+        <h2
+          class="lang section-heading wow fadeInUp"
+          data-wow-delay="0.2s"
+          key="offerHeading"
+        >
+          Що ми пропонуємо?
+        </h2>
+        <div class="cards">
+          <div class="card wow fadeInUp" data-wow-delay="0.2s">
+            <div class="card-icon">
+              <img src="img/alphabet.svg" alt="card-icon" class="card-icon" />
+            </div>
+            <span class="lang tittle" key="general">Базова англійська</span>
+            <p class="lang text" key="beginner">
+              Рівні Beginner-Advanced – вивчення мови з включенням всіх аспектів
+              в компактних групах до 6 чоловік та індивідуально, в тому числі
+              для дітей.
+            </p>
+          </div>
+          <!-- /.card -->
+          <div class="card wow fadeInUp" data-wow-delay="0.3s">
+            <div class="card-icon">
+              <img src="img/checklist.svg" alt="card-icon" class="card-icon" />
+            </div>
+            <span class="lang tittle" key="exam">Підготовка до екзаменів</span>
+            <p class="lang text" key="prep">
+              Підготовка до здачі ЗНО, IELTS, TOEFL, FCE та ін.
+            </p>
+          </div>
+          <!-- /.card -->
+          <div class="card wow fadeInUp" data-wow-delay="0.4s">
+            <div class="card-icon">
+              <img src="img/skills.svg" alt="card-icon" class="card-icon" />
+            </div>
+            <span class="lang tittle" key="spec"
+              >Спеціалізована англійська</span
+            >
+            <p class="lang text" key="spheres">
+              Англійська для таких сфер як : ІТ, юриспруденція, фінанси,
+              маркетинг, банкова справа, медицина та ін.
+            </p>
+          </div>
+          <!-- /.card -->
+          <div class="card wow fadeInUp" data-wow-delay="0.2s">
+            <div class="card-icon">
+              <img src="img/video-call.svg" alt="card-icon" class="card-icon" />
+            </div>
+            <span class="lang tittle" key="online">Онлайн заняття</span>
+            <p class="lang text" key="comfort">
+              Комфортне вивчення англійської мови вдома чи на роботі за
+              допомогою Skype. Індивідуальні заняття за різними програмами.
+            </p>
+          </div>
+          <!-- /.card -->
+          <div class="card wow fadeInUp" data-wow-delay="0.3s">
+            <div class="card-icon">
+              <img src="img/team.svg" alt="card-icon" class="card-icon" />
+            </div>
+
+            <span class="lang tittle" key="individual"
+              >Індивідуальні та групові заняття</span
+            >
+            <p class="lang text" key="choice">
+              Обирайте між заняттями в компактних групах чи індивідуальним
+              графіком у зручний для вас час.
+            </p>
+          </div>
+          <!-- /.card -->
+          <div class="card wow fadeInUp" data-wow-delay="0.4s">
+            <div class="card-icon">
+              <img src="img/language.svg" alt="card-icon" class="card-icon" />
+            </div>
+            <span class="lang tittle" key="more"
+              >Ми - не тільки англійська</span
+            >
+            <p class="lang text" key="langs">
+              Є можливість вивчення німецької, польської та чеської мов. А також
+              викладання української та російської для іноземців.
+            </p>
+          </div>
+          <!-- /.card -->
+        </div>
+        <!-- /.cards -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.offers -->
+    <a name="about"></a>
+    <section class="about">
+      <div class="container">
+        <h2
+          class="lang left section-heading wow fadeInUp"
+          data-wow-delay="0.2s"
+          key="aboutHeading"
+        >
+          Про нас
+        </h2>
+        <p
+          class="lang left text wow fadeInUp"
+          data-wow-delay="0.3s"
+          key="aboutText"
+        >
+          <b>LANGUAGE CENTRE</b> – команда молодих та креативних викладачів з
+          багаторічним досвідом викладання англійської мови. Наш дружній
+          колектив почав свою діяльність в 2011 році, і з тих пір провів тисячі
+          занять із сотнями задоволених студентів. Ми пропонуємо лише сучасні
+          методики викладання та персональний підхід до кожного учня. Наші двері
+          відчинені для кожного, хто бажає вивчити мову або покращити наявний
+          рівень знань.
+        </p>
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.about -->
+    <a name="benefits"></a>
+    <section class="benefits">
+      <div class="container">
+        <h2
+          class="lang section-heading wow fadeInUp"
+          data-wow-delay="0.2s"
+          key="advantagesHeading"
+        >
+          Наші переваги
+        </h2>
+        <div class="round-cards">
+          <div class="round-card wow fadeInUp" data-wow-delay="0.2s">
+            <div class="round-block">
+              <img src="../img/idea.svg" alt="card-icon" class="card-icon" />
+            </div>
+            <p class="lang text" key="innov">
+              Використання новітніх підходів та методик у вивченні мови.
+            </p>
+          </div>
+          <!-- /.round-card -->
+          <div class="round-card wow fadeInUp" data-wow-delay="0.3s">
+            <div class="round-block">
+              <img
+                src="../img/appointment.svg"
+                alt="card-icon"
+                class="card-icon"
+              />
+            </div>
+            <p class="lang text" key="flex">
+              Гнучкий графік, широкий спектр послуг.
+            </p>
+          </div>
+          <!-- /.round-card -->
+          <div class="round-card wow fadeInUp" data-wow-delay="0.4s">
+            <div class="round-block">
+              <img
+                src="../img/satisfaction.svg"
+                alt="card-icon"
+                class="card-icon"
+              />
+            </div>
+            <p class="lang text" key="period">
+              Гарантоване оволодіння мовою на певному рівні за короткий час (від
+              3 до 5 місяців).
+            </p>
+          </div>
+          <!-- /.round-card -->
+          <div class="round-card wow fadeInUp" data-wow-delay="0.5s">
+            <div class="round-block">
+              <img
+                src="../img/friendship.svg"
+                alt="card-icon"
+                class="card-icon"
+              />
+            </div>
+            <p class="lang text" key="friendly">
+              Привітні та мотивовані молоді викладачі та чудова атмосфера.
+            </p>
+          </div>
+          <!-- /.round-card -->
+        </div>
+        <!-- /.round-cards -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.benefits -->
+    <a name="translation"></a>
+    <section class="translation">
+      <div class="container">
+        <h2
+          class="lang left section-heading wow fadeInUp"
+          data-wow-delay="0.2s"
+          key="transHeading"
+        >
+          Переклади
+        </h2>
+        <p
+          class="lang left text wow fadeInUp"
+          data-wow-delay="0.3s"
+          key="transText"
+        >
+          Професійні переклади з англійської мови на українську та російську та
+          навпаки на будь-яку тематику, зокрема :
+        </p>
+        <ul class="list left text wow fadeInUp" data-wow-delay="0.4s">
+          <li>
+            <span class="lang" key="trans1"
+              >Переклади загальної та специфічної тематики.</span
+            >
+          </li>
+          <li><span class="lang" key="trans2">Технічні переклади.</span></li>
+          <li><span class="lang" key="trans3">Літературні переклади.</span></li>
+          <li>
+            <span class="lang" key="trans4"
+              >Переклади відео- та аудіозаписів.</span
+            >
+          </li>
+          <li><span class="lang" key="trans5">Переклад документів.</span></li>
+        </ul>
+      </div>
+    </section>
+    <!-- /.translation -->
+    <a name="corporate"></a>
+    <section class="corporate">
+      <div class="container">
+        <h2
+          class="lang section-heading wow fadeInUp"
+          data-wow-delay="0.2s"
+          key="corporateHeading "
+        >
+          Корпоративні заняття
+        </h2>
+        <div class="corporate-wrap">
+          <div class="corporate-card wow fadeInUp" data-wow-delay="0.3s">
+            <div class="round-block">
+              <img src="../img/work.svg" alt="card-icon" class="card-icon" />
+            </div>
+            <p
+              class="lang text wow fadeInUp"
+              data-wow-delay="0.4s"
+              key="corporText"
+            >
+              Корпоративні заняття - чудова можливість для співробітників вашої
+              компанії покращити рівень англійської мови. Ми пропонуємо базову
+              англійську для всіх рівнів, бізнес курс, спеціалізовані курси для
+              різноманітних сфер, а також підготовку до технічних інтерв'ю та
+              комплексне тестування для співробітників та кандидатів на роботу.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /.corporate -->
+    <a name="test"></a>
+    <section class="test">
+      <div class="container">
+        <h2
+          class="lang section-heading wow fadeInUp"
+          data-wow-delay="0.2s"
+          key="start"
+        >
+          Готові почати?
+        </h2>
+        <p class="lang text wow fadeInUp" data-wow-delay="0.3s" key="startText">
+          Для того, щоб почати навчання в Language Centre, потрібно заповнити
+          анкету, пройти тест для визначення рівня володіння англійською мовою,
+          визначитися зі зручним часом та формою навчання та чекати дзвінка!
+        </p>
+        <div class="step-cards">
+          <div class="step-card">
+            <a
+              href="https://docs.google.com/forms/d/151GBIhQNcowq59LZvGhFphOVn5fIU4dZ6Sd8D-iyYVQ/viewform?edit_requested=true&fbclid=IwAR2wNMOaShVgI_Tie9detmHQZxIh6rESEo-zp_phYlgJpGmRpGdQMipOKBE"
+            >
+              <div class="round-block animated">
+                <img src="../img/forms.svg" alt="card-icon" class="card-icon" />
+                <span class="lang step-span" key="step1">ЗАПОВНІТЬ АНКЕТУ</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- /.round-card -->
+
+          <div class="step-card">
+            <a
+              href="https://docs.google.com/forms/d/151GBIhQNcowq59LZvGhFphOVn5fIU4dZ6Sd8D-iyYVQ/viewform?edit_requested=true&fbclid=IwAR2wNMOaShVgI_Tie9detmHQZxIh6rESEo-zp_phYlgJpGmRpGdQMipOKBE"
+            >
+              <div class="round-block">
+                <img src="../img/test.svg" alt="card-icon" class="card-icon" />
+                <span class="lang step-span" key="step2">ПРОЙДІТЬ ТЕСТ</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- /.round-card -->
+
+          <div class="step-card">
+            <a
+              href="https://docs.google.com/forms/d/151GBIhQNcowq59LZvGhFphOVn5fIU4dZ6Sd8D-iyYVQ/viewform?edit_requested=true&fbclid=IwAR2wNMOaShVgI_Tie9detmHQZxIh6rESEo-zp_phYlgJpGmRpGdQMipOKBE"
+            >
+              <div class="round-block">
+                <img src="../img/appointment2.svg" alt="" class="card-icon" />
+                <span class="lang step-span" key="step3">ОБЕРІТЬ ЧАС</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- /.round-card -->
+
+          <div class="step-card">
+            <a href="#">
+              <div class="round-block">
+                <img src="../img/phone.svg" alt="card-icon" class="card-icon" />
+                <span class="lang step-span" key="step4">ЧЕКАЙТЕ ДЗВІНКА</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- /.round-card -->
+        </div>
+      </div>
+    </section>
+    <!-- /.test -->
+    <a name="contacts"></a>
+    <section class="contacts">
+      <h2
+        class="lang section-heading wow fadeInUp"
+        data-wow-delay="0.2s"
+        key="contactsHeading"
+      >
+        Контакти
+      </h2>
+      <div class="contacts-bg wow fadeInUp" data-wow-delay="0.3s">
+        <div class="contacts-wrap">
+          <div class="contact">
+            <img src="../img/address.svg" alt="address" class="contact-icon" />
+            <p class="lang left text">
+              <strong class="lang" key="ad">Адреса</strong>:<span
+                class="lang"
+                key="add"
+              >
+                58022, м. Чернівці, вул. Герцена, 1а,<br />3-й поверх,
+                к.41-42</span
+              >
+            </p>
+          </div>
+          <div class="contact">
+            <img
+              src="../img/telephone.svg"
+              alt="telephone"
+              class="contact-icon"
+            />
+            <p class="text">
+              <strong class="lang" key="tel">Телефон</strong>: (0372) 538535
+            </p>
+          </div>
+          <div class="contact">
+            <img
+              src="../img/smartphone.svg"
+              alt="mobile"
+              class="contact-icon"
+            />
+            <p class="text">
+              <strong class="lang" key="mob">Мобільний</strong>: 0993667798
+            </p>
+          </div>
+          <div class="contact">
+            <img src="../img/envelope.svg" alt="e-mail" class="contact-icon" />
+            <p class="text">
+              <strong class="lang" key="em">E-mail</strong>: langcen@gmail.com
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2655.3494321076973!2d25.942181951072424!3d48.276892979132846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473408c6fe49fcaf%3A0x363c95e75e5e7a89!2zTEFOR1VBR0UgQ0VOVFJFLCDQptCV0J3QotCgINCS0JjQktCn0JXQndCd0K8g0JDQndCT0JvQhtCZ0KHQrNCa0J7Qhw!5e0!3m2!1suk!2sua!4v1587221842934!5m2!1suk!2sua"
+          width="600"
+          height="450"
+          frameborder="0"
+          style="border: 0;"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        ></iframe>
+      </div>
+    </section>
+    <!-- /.contacts -->
+    <section class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="social-links">
+            <a
+              href="https://www.facebook.com/LCchernivtsi/?__tn__=kCH-R&eid=ARDNqKQQup3BH5UZB7k2l_Vx3HsqMq3HPBrO068hjFrHsqjg8VsnO_R5j4VcVFychJEjYKdokyTfSWow&hc_ref=ARSEKI1o3KchvIZxRFGklcmGTmewCrZrYnPP3fcoIaz8iH8edBk47sCR4UYaQYIQRNQ&fref=nf"
+              class="social-link"
+              ><img src="../img/fb.svg" alt="facebook" class="social-icon"
+            /></a>
+            <a
+              href="https://www.instagram.com/language_centre_cv/"
+              class="social-link"
+              ><img src="../img/inst.svg" alt="instagram" class="social-icon"
+            /></a>
+            <a href="skype:langcen" class="social-link"
+              ><img src="../img/skype.svg" alt="skype" class="social-icon"
+            /></a>
+            <a href="https://teleg.run/LanguageCentreCV"
+              ><img
+                src="../img/telegram.svg"
+                alt="telegram"
+                class="social-icon"
+            /></a>
+          </div>
+          <nav class="nav">
+            <div class="nav-links">
+              <a href="#offers" class="lang nav-link" key="offer">послуги</a>
+              <a href="#about" class="lang nav-link" key="about">про нас</a>
+              <a href="#benefits" class="lang nav-link" key="advantages"
+                >переваги</a
+              >
+              <a href="#translation" class="lang nav-link" key="trans"
+                >переклади</a
+              >
+              <a href="#corporate" class="lang nav-link" key="corporate"
+                >корпоративні заняття</a
+              >
+              <a href="#test" class="lang nav-link" key="student"
+                >записатися на заняття</a
+              >
+              <a href="#contacts" class="lang nav-link" key="contacts"
+                >контакти</a
+              >
+            </div>
+          </nav>
+        </div>
+      </div>
+    </section>
+
+    <script src="js\wow.min.js"></script>
+    <script src="js\main.js"></script>
+    <script src="js\translate.js"></script>
+  </body>
+</html>
