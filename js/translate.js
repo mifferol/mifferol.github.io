@@ -73,7 +73,7 @@ var arrLang = {
     courseDescr:
       "Language school specializing in teaching English to all levels and age groups.",
     contactBtn: "contact us",
-    offerHeading: "What do we offer",
+    offerHeading: "What we offer",
     general: "General English",
     beginner:
       "Beginner through Advanced levels. All aspects included; practicing English in small groups or individually",

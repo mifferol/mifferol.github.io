@@ -43,6 +43,12 @@ a {
   text-decoration: none;
   color: #ffffff;
 }
+
+.nav-link:hover{
+  color: #95d148;
+  transition-duration: 300ms;
+}
+
 .lang-buttons {
   display: -webkit-flex;
   display: -ms-flex;
@@ -106,6 +112,12 @@ a {
   padding: 25px 30px;
   margin-top: 68px;
   margin-bottom: 150px;
+}
+
+.green-button:hover{
+  color: #95d148;
+  background: #fff;
+  transition: 600ms ease-in-out;
 }
 
 .container {
